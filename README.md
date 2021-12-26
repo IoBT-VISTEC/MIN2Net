@@ -1,15 +1,10 @@
-# MIN2Net
-
-End-to-End Multi-Task Learning for Subject-Independent Motor Imagery EEG Classification
+[<img src="https://min2net.github.io/assets/images/min2net-logo.png" width="30%" height="30%">](https://min2net.github.io)
 
 [<img src="https://img.shields.io/badge/DOI-10.1109%2FTBME.2021.3137184-blue">](https://ieeexplore.ieee.org/document/9658165/)
 
+End-to-End Multi-Task Learning for Subject-Independent Motor Imagery EEG Classification
+- **Documentation**: https://min2net.github.io
 ---
-
-## API Documentation
-https://min2net.github.io
-
-
 ## Getting started
 
 ### Dependencies
@@ -63,10 +58,6 @@ P. Autthasan et al., "MIN2Net: End-to-End Multi-Task Learning for Subject-Indepe
   pages={1-1},
   doi={10.1109/TBME.2021.3137184}}
 ```
-
-### Source Code 
-
-View our Code on [<img src="[./assets/images/github.png](https://min2net.github.io/assets/images/github.png)" width="20" height="20">](https://github.com/IoBT-VISTEC/MIN2Net)
 
 ### License
 Copyright &copy; 2021-All rights reserved by [INTERFACES (BRAIN lab @ IST, VISTEC, Thailand)](https://vistec.ist/interfaces).
