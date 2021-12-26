@@ -6,6 +6,9 @@ End-to-End Multi-Task Learning for Subject-Independent Motor Imagery EEG Classif
 
 ---
 
+## API Documentation
+https://min2net.github.io
+
 
 ## Getting started
 
@@ -63,7 +66,7 @@ P. Autthasan et al., "MIN2Net: End-to-End Multi-Task Learning for Subject-Indepe
 
 ### Source Code 
 
-View our Code on [<img src="./assets/images/github.png" width="20" height="20">](https://github.com/IoBT-VISTEC/MIN2Net)
+View our Code on [<img src="[./assets/images/github.png](https://min2net.github.io/assets/images/github.png)" width="20" height="20">](https://github.com/IoBT-VISTEC/MIN2Net)
 
 ### License
 Copyright &copy; 2021-All rights reserved by [INTERFACES (BRAIN lab @ IST, VISTEC, Thailand)](https://vistec.ist/interfaces).
