@@ -7,12 +7,18 @@ setuptools.setup(
     name="min2net",
     version="1.0.0",
     author="INTERFACES",
-    author_email="brainvistec@gmail.com",
+    author_email="IoBT.VISTEC@gmail.com",
     description="MIN2Net: End-to-End Multi-Task Learning for Subject-Independent Motor Imagery EEG Classification",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/IoBT-VISTEC/MIN2Net",
-    license="Apache Software License 2.0",
+    url="https://MIN2Net.github.io",
+    download_url="https://github.com/IoBT-VISTEC/MIN2Net/releases",
+    project_urls={
+        "Bug Tracker": "https://github.com/IoBT-VISTEC/MIN2Net/issues",
+        "Documentation": "https://MIN2Net.github.io",
+        "Source Code": "https://github.com/IoBT-VISTEC/MIN2Net",
+    },
+    license="Apache Software License",
     keywords=[
         "Brain-computer Interfaces"
         "BCI", 

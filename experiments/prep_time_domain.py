@@ -56,14 +56,3 @@ prep.OpenBMI.time_domain.subject_independent_setting(k_folds=k_folds,
                                                      save_path=save_path, 
                                                      num_class=num_class, 
                                                      sel_chs=CONSTANT['OpenBMI']['sel_chs'])
-
-
-
-
-
-
-
-
-
-
-

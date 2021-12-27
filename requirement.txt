@@ -1,0 +1,4 @@
+# tensorflow-gpu==2.2.0 # not support tensorflow-gpu via pip
+tensorflow-addons==0.9.1
+scikit-learn>=0.24.1
+wget>=3.2
