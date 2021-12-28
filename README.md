@@ -9,10 +9,10 @@
 
 Python API and the novel algorithm for motor imagery EEG recognition named MIN2Net. The API benefits BCI researchers ranging from beginners to experts. We demonstrate the examples in using the API for loading benchmark datasets, preprocessing, training, and validation of SOTA models, including MIN2Net. In summary, the API allows the researchers to construct the pipeline for benchmarking the newly proposed models and very recently developed SOTA models.
 
-- **Website:** https://min2net.github.io/
-- **Documentation:** https://min2net.github.io/
-- **Source code:** https://github.com/IoBT-VISTEC/MIN2Net
-- **Bug reports:** https://github.com/IoBT-VISTEC/MIN2Net/issues
+- **Website:** [https://min2net.github.io](https://min2net.github.io)
+- **Documentation:** [https://min2net.github.io](https://min2net.github.io)
+- **Source code:** [https://github.com/IoBT-VISTEC/MIN2Net](https://github.com/IoBT-VISTEC/MIN2Net)
+- **Bug reports:** [https://github.com/IoBT-VISTEC/MIN2Net/issues](https://github.com/IoBT-VISTEC/MIN2Net/issues)
   
 ---
 
