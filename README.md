@@ -43,8 +43,8 @@ conda activate min2net
 2. Using the released python wheel
 
   ```bash
-  wget https://github.com/IoBT-VISTEC/MIN2Net/releases/download/v1.0.0/min2net-1.0.0-py3-none-any.whl
-  pip install min2net-1.0.0-py3-none-any.whl
+  wget https://github.com/IoBT-VISTEC/MIN2Net/releases/download/v1.0.1/min2net-1.0.1-py3-none-any.whl
+  pip install min2net-1.0.1-py3-none-any.whl
   ```
 ### Tutorial
 
