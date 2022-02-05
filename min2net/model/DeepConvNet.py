@@ -14,7 +14,7 @@ from min2net.utils import TimeHistory, compute_class_weight
 
 class DeepConvNet:
     def __init__(self,
-                input_shape=(20,400,1),
+                input_shape=(1,20,400),
                 num_class=2,
                 loss='sparse_categorical_crossentropy',
                 epochs=200,
@@ -49,8 +49,6 @@ class DeepConvNet:
         self.time_log = log_path+'/'+model_name+'_time_log.csv'
 
         # use **kwargs to set the new value of below args.
-        self.Chans = input_shape[0]
-        self.Samples = input_shape[1]
         self.kernLength = 125
         self.F1 = 8
         self.D = 2
@@ -58,7 +56,7 @@ class DeepConvNet:
         self.norm_rate = 0.25
         self.dropout_rate = 0.5
         self.f1_average = 'binary' if self.num_class == 2 else 'macro'
-        self.data_format = 'channels_last'
+        self.data_format = 'channels_first'
         self.shuffle = False
         self.metrics = 'accuracy'
         self.monitor = 'val_loss'
@@ -71,6 +69,13 @@ class DeepConvNet:
 
         for k in kwargs.keys():
             self.__setattr__(k, kwargs[k])
+            
+        if self.data_format == 'channels_first':
+            self.Chans = self.input_shape[1]
+            self.Samples = self.input_shape[2]
+        else:
+            self.Chans = self.input_shape[0]
+            self.Samples = self.input_shape[1]
 
         np.random.seed(self.seed)
         tf.random.set_seed(self.seed)
@@ -150,8 +155,12 @@ class DeepConvNet:
             raise Exception('ValueError: `X_val` is incompatible: expected ndim=4, found ndim='+str(X_val.ndim))
 
         self.input_shape = X_train.shape[1:]
-        self.Chans = self.input_shape[0]
-        self.Samples = self.input_shape[1]
+        if self.data_format == 'channels_first':
+            self.Chans = self.input_shape[1]
+            self.Samples = self.input_shape[2]
+        else:
+            self.Chans = self.input_shape[0]
+            self.Samples = self.input_shape[1]
         
         csv_logger = CSVLogger(self.csv_dir)
         time_callback = TimeHistory(self.time_log)

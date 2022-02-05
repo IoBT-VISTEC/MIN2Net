@@ -13,7 +13,7 @@ from config import config
 python train_MIN2Net_k-fold-CV.py \
     --dataset 'OpenBMI' \
     --train_type 'subject_independent' --GPU 1 \
-    --margin 1.0 --loss_weights 1.0 1.0 1.0
+    --margin 1.0 --loss_weights 0.5 0.5 1.0
 
 '''
 
@@ -77,7 +77,7 @@ def k_fold_cross_validation(subject):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--loss_weights', nargs='+', default=[0.5, 1, 1], type=float, help='loss_weights (beta): ex. [beta1,beta2,beta3]')
+    parser.add_argument('--loss_weights', nargs='+', default=[0.5, 0.5, 1.0], type=float, help='loss_weights (beta): ex. [beta1,beta2,beta3]')
     parser.add_argument('--save_path', type=str, default='logs/MIN2Net', help='path to save logs')
     parser.add_argument('--data_path', type=str, default='datasets', help='path to datasets')
     parser.add_argument('--dataset', type=str, default='OpenBMI', help='dataset name: ex. [BCIC2a/SMR_BCI/OpenBMI]')
@@ -112,7 +112,7 @@ if __name__ == '__main__':
     print('TRAIN SET: {}'.format(args.dataset))
     print('The size of latent vector: {}'.format(latent_dim))
     
-    log_path = '{}_margin{}/{}_{}_classes_{}'.format(args.save_path, str(args.margin), args.train_type, str(num_class), args.dataset, str(args.loss_weights))
+    log_path = '{}_margin{}/{}_{}_classes_{}_{}'.format(args.save_path, str(args.margin), args.train_type, str(num_class), args.dataset, str(args.loss_weights))
     for directory in [log_path]:
         if not os.path.exists(directory):
             os.makedirs(directory)

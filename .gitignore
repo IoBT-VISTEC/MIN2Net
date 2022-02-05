@@ -1,0 +1,9 @@
+experiments/datasets/
+experiments/log*
+experiments/pretrained*
+build/
+dist/
+min2net.egg-info/
+.ipynb
+.DS_Store
+__pycache__

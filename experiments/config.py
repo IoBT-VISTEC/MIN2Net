@@ -154,20 +154,20 @@ config = {
             },
             'BCIC2a': {
                     'n_subjects': 9,
-                    'input_shape': (20,400,1),
-                    'data_format': 'NCTD',
+                    'input_shape': (1,20,400),
+                    'data_format': 'NDCT',
                     'num_class': 2
             },
             'OpenBMI': {
                     'n_subjects': 54,
-                    'input_shape': (20,400,1),
-                    'data_format': 'NCTD',
+                    'input_shape': (1,20,400),
+                    'data_format': 'NDCT',
                     'num_class': 2
             },
             'SMR_BCI': {
                     'n_subjects': 14,
-                    'input_shape': (15,400,1),
-                    'data_format': 'NCTD',
+                    'input_shape': (1,15,400),
+                    'data_format': 'NDCT',
                     'num_class': 2
             },
     },
@@ -199,20 +199,20 @@ config = {
             },
             'BCIC2a': {
                     'n_subjects': 9,
-                    'input_shape': (20,400,1),
-                    'data_format': 'NCTD',
+                    'input_shape': (1,20,400),
+                    'data_format': 'NDCT',
                     'num_class': 2
             },
             'OpenBMI': {
                     'n_subjects': 54,
-                    'input_shape': (20,400,1),
-                    'data_format': 'NCTD',
+                    'input_shape': (1,20,400),
+                    'data_format': 'NDCT',
                     'num_class': 2
             },
             'SMR_BCI': {
                     'n_subjects': 14,
-                    'input_shape': (15,400,1),
-                    'data_format': 'NCTD',
+                    'input_shape': (1,15,400),
+                    'data_format': 'NDCT',
                     'num_class': 2
             }
     },

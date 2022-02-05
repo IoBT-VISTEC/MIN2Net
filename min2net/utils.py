@@ -101,6 +101,9 @@ class DataLoader:
         if self.data_format == 'NCTD':
             # (#n_trial, #channels, #time, #depth)
             X = X.reshape(X.shape[0], X.shape[1], X.shape[2], 1)
+        elif self.data_format == 'NDCT':
+            # (#n_trial, #depth, #channels, #time)
+            X = X.reshape(X.shape[0], 1, X.shape[1], X.shape[2])
         elif self.data_format == 'NTCD':
             # (#n_trial, #time, #channels, #depth)
             X = X.reshape(X.shape[0], X.shape[1], X.shape[2], 1)
@@ -112,7 +115,7 @@ class DataLoader:
         elif self.data_format == None:
             pass
         else:
-            raise Exception('Value Error: data_format requires None, \'NCTD\', \'NTCD\' or \'NSHWD\', found data_format={}'.format(self.data_format))
+            raise Exception('Value Error: data_format requires None, \'NCTD\', \'NDCT\', \'NTCD\' or \'NSHWD\', found data_format={}'.format(self.data_format))
         print('change data_format to \'{}\', new dimention is {}'.format(self.data_format, X.shape))
         return X
 
