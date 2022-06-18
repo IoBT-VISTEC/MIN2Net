@@ -58,17 +58,13 @@ P. Autthasan et al., "MIN2Net: End-to-End Multi-Task Learning for Subject-Indepe
 
 ```
 @ARTICLE{9658165,
-  author={Autthasan, Phairot and Chaisaen, Rattanaphon and Sudhawiyangkul, Thapanun and 
-  Kiatthaveephong, Suktipol and Rangpong, Phurin and Dilokthanakul, Nat 
-  and Bhakdisongkhram, Gun and Phan, Huy and Guan, Cuntai and 
-  Wilaiprasitporn, Theerawit},
+  author={Autthasan, Phairot and Chaisaen, Rattanaphon and Sudhawiyangkul, Thapanun and Rangpong, Phurin and Kiatthaveephong, Suktipol and Dilokthanakul, Nat and Bhakdisongkhram, Gun and Phan, Huy and Guan, Cuntai and Wilaiprasitporn, Theerawit},
   journal={IEEE Transactions on Biomedical Engineering}, 
-  title={MIN2Net: End-to-End Multi-Task Learning for Subject-Independent Motor Imagery 
-  EEG Classification}, 
-  year={2021},
-  volume={},
-  number={},
-  pages={1-1},
+  title={MIN2Net: End-to-End Multi-Task Learning for Subject-Independent Motor Imagery EEG Classification}, 
+  year={2022},
+  volume={69},
+  number={6},
+  pages={2105-2118},
   doi={10.1109/TBME.2021.3137184}}
 ```
 
