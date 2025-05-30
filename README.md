@@ -13,7 +13,13 @@ Python API and the novel algorithm for motor imagery EEG recognition named MIN2N
 - **Documentation:** [https://min2net.github.io](https://min2net.github.io)
 - **Source code:** [https://github.com/IoBT-VISTEC/MIN2Net](https://github.com/IoBT-VISTEC/MIN2Net)
 - **Bug reports:** [https://github.com/IoBT-VISTEC/MIN2Net/issues](https://github.com/IoBT-VISTEC/MIN2Net/issues)
-  
+
+## 📌 PyTorch Version 🔁
+
+The MIN2Net architecture implemented in PyTorch is available on:
+
+👉 [AlphaGrad Repository](https://github.com/xydxdy/AlphaGrad) – mtl_bci/networks/MIN2Net.py
+
 ---
 
 ## Getting started
