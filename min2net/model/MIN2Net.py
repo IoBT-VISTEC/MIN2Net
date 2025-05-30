@@ -14,6 +14,14 @@ from sklearn.metrics import classification_report, f1_score
 from min2net.loss import mean_squared_error, triplet_loss, SparseCategoricalCrossentropy
 from min2net.utils import TimeHistory, compute_class_weight
 
+"""
+## 📌 PyTorch Version 🔁
+
+The MIN2Net architecture implemented in PyTorch is available on:
+
+👉 AlphaGrad Repository: https://github.com/xydxdy/AlphaGrad/blob/main/mtl_bci/networks/MIN2Net.py
+"""
+
 class MIN2Net:
     def __init__(self,
                 input_shape=(1,400,20), 
